@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiRest", "ApiRest.csproj", "{F73D175B-0208-4858-BE5A-1D69DBE91F2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "..\UnitTest\UnitTest.csproj", "{4F07DAFB-607E-4C8C-8B36-C8C748C9DB12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F73D175B-0208-4858-BE5A-1D69DBE91F2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F73D175B-0208-4858-BE5A-1D69DBE91F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F73D175B-0208-4858-BE5A-1D69DBE91F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F73D175B-0208-4858-BE5A-1D69DBE91F2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F07DAFB-607E-4C8C-8B36-C8C748C9DB12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F07DAFB-607E-4C8C-8B36-C8C748C9DB12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F07DAFB-607E-4C8C-8B36-C8C748C9DB12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F07DAFB-607E-4C8C-8B36-C8C748C9DB12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

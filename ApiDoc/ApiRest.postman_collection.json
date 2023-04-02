@@ -1,0 +1,359 @@
+{
+	"info": {
+		"_postman_id": "03b3c756-a2c0-4bc1-9a2c-4a99065a0089",
+		"name": "ApiRest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6607895"
+	},
+	"item": [
+		{
+			"name": "One",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/report/one",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"report",
+						"one"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": []
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"data\": {\n        \"body\": [\n            {\n                \"category\": \"Combustible administrativo\",\n                \"percentage\": 38\n            },\n            {\n                \"category\": \"Combustible indirecto de proveedor\",\n                \"percentage\": 7\n            },\n            {\n                \"category\": \"Combustible de logistico\",\n                \"percentage\": 55\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Two",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/report/two",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"report",
+						"two"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": []
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"data\": {\n        \"body\": [\n            {\n                \"category\": \"Combustible administrativo\",\n                \"percentage\": 38\n            },\n            {\n                \"category\": \"Combustible indirecto de proveedor\",\n                \"percentage\": 7\n            },\n            {\n                \"category\": \"Combustible de logistico\",\n                \"percentage\": 55\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Two Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/report/one",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"report",
+						"one"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": []
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"data\": {\n        \"category\": \"Envasado\",\n        \"percentage\": 70\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Consumo Gasolina",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"units\": 2333,\n  \"consumptionDate\": \"2023-04-02T01:59:09.259Z\",\n  \"fuelCatalogId\": -1,\n  \"issuanceCatalogId\": -1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/fuel",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"fuel"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"units\": 2333,\n  \"consumptionDate\": \"2023-04-02T01:59:09.259Z\",\n  \"fuelCatalogId\": -1,\n  \"issuanceCatalogId\": -1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/fuel",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"fuel"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 201,\n    \"data\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Consumo Energia",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"units\": 555,\n  \"consumptionDate\": \"2023-04-02T02:05:17.842Z\",\n  \"energyCatalogId\": -1,\n  \"issuanceCatalogId\": -1,\n  \"energyTypeCatalogId\": -1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/energy",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"energy"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"units\": 555,\n  \"consumptionDate\": \"2023-04-02T02:05:17.842Z\",\n  \"energyCatalogId\": -1,\n  \"issuanceCatalogId\": -1,\n  \"energyTypeCatalogId\": -1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/energy",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"energy"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 201,\n    \"data\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Consumo derivados de petroleo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"units\": 199,\n  \"consumptionDate\": \"2023-04-02T02:08:54.622Z\",\n  \"petroleumCatalogId\": -1,\n  \"issuanceCatalogId\": -2,\n  \"derivativeCatalogId\": -1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/petroleum",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"petroleum"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Consumo derivados de petroleo",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"units\": 199,\n  \"consumptionDate\": \"2023-04-02T02:08:54.622Z\",\n  \"petroleumCatalogId\": -1,\n  \"issuanceCatalogId\": -2,\n  \"derivativeCatalogId\": -1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/petroleum",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"petroleum"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 201,\n    \"data\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Viajes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"destination\": \"Dubai\",\n  \"travelDate\": \"2023-04-02T02:10:12.544Z\",\n  \"travelCatalogId\": -1,\n  \"issuanceCatalogId\": -1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/travel",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"travel"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Viajes",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"destination\": \"Dubai\",\n  \"travelDate\": \"2023-04-02T02:10:12.544Z\",\n  \"travelCatalogId\": -1,\n  \"issuanceCatalogId\": -1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/travel",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"travel"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 201,\n    \"data\": true\n}"
+				}
+			]
+		}
+	]
+}
