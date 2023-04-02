@@ -3,6 +3,7 @@
 Name: Carlos Andre Avalos Soto
 Language: C#
 Framework: .Net 6
+Databse: PostgreSql
 ```
 
 ## Comando basicos
