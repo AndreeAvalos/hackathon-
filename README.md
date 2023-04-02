@@ -6,13 +6,13 @@ Framework: .Net 6
 ```
 
 ## Comando basicos
-Restaurar paquetes
+- Restaurar paquetes
 `dotnet restore`
-Restaurar base de datos
+- Restaurar base de datos
 `dotnet ef database update --context=CustomContext`
-Compilar solucion
+- Compilar solucion
 `dotnet build`
-Ejecutar aplicacion
+- Ejecutar aplicacion
 `dotnet run`
-Ejecutar pruebas unitarias
+- Ejecutar pruebas unitarias
 `dotnet test`
